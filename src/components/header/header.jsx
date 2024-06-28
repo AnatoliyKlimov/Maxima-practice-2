@@ -4,7 +4,7 @@ function Header() {
 
     return (
         <>
-            <header className="header">
+            <header>
                 <div className="container">
                     <div className="top-header">
                         <div className="sale-block">
