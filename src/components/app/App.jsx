@@ -1,12 +1,10 @@
-import Header from "../header/header";
-import Footer from "../footer/footer";
+import MainPage from "../../pages/main-page/main-page";
 
 function App() {
 
   return (
     <>
-      <Header />
-      <Footer />
+      <MainPage/>
     </>
   );
 
