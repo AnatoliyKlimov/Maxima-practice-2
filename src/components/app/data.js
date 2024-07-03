@@ -1,4 +1,4 @@
-products = [
+const products = [
     {
         id: 0,
         name: 'HAVIT HV-G92 Gamepad',
@@ -145,3 +145,5 @@ products = [
         category: 'Furniture'
     },
 ]
+
+export default products;
