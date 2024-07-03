@@ -1,0 +1,24 @@
+.scroll-btns-block {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.scroll-btn{
+    padding: 16px;
+    background: rgb(245, 245, 245);
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.scroll-btn-back{
+    background-image: url('../../../public/img/svg/arr-btn-back.svg');
+}
+
+.scroll-btn-forward{
+    background-image: url('../../../public/img/svg/arr-btn-forward.svg');
+}
