@@ -69,7 +69,6 @@ function ThisMonthSection() {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
         </>

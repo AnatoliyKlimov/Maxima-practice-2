@@ -1,0 +1,10 @@
+.our-products-section {
+    padding: 0 135px 71px 135px;
+}
+
+.our-products__view-btn{
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    /* border-bottom: 0.5px solid rgba(0, 0, 0, 0.3); */
+}
