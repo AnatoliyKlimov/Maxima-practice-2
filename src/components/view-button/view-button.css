@@ -13,6 +13,8 @@
     max-width: 236px;
     min-width: 159px;
     width: fit-content;
+    max-height: 56px;
+    height: 100%;
 }
 
 .view-button:hover {
