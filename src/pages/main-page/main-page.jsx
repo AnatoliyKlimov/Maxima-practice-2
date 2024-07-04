@@ -3,7 +3,7 @@ import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import MenuListCategoriesSection from './menu-list-categories-section/menu-list-categories-section';
 import TodaysSection from './todays-section/todays-section';
-
+import CategoriesSection from './categories-section/categories-section';
 
 function MainPage() {
 
@@ -12,6 +12,7 @@ function MainPage() {
             <Header />
             <MenuListCategoriesSection />
             <TodaysSection />
+            <CategoriesSection />
             <Footer />
         </>
     )

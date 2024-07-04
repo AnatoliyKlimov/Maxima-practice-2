@@ -6,7 +6,8 @@ const products = [
         discount: 40,
         img: '/img/png/products/g92.png',
         raiting: 88,
-        category: 'Gaming'
+        category: 'Phones',
+        img_category: '/img/svg/category/CellPhone.svg'
     },
     {
         id: 1,
@@ -15,7 +16,8 @@ const products = [
         discount: 35,
         img: '/img/png/products/ak-90.png',
         raiting: 75,
-        category: 'Computers'
+        category: 'Computers',
+        img_category: '/img/svg/category/Computer.svg'
     },
     {
         id: 2,
@@ -24,7 +26,8 @@ const products = [
         discount: 25,
         img: '/img/png/products/g27cq4.png',
         raiting: 99,
-        category: 'Gaming'
+        category: 'SmartWatch',
+        img_category: '/img/svg/category/SmartWatch.svg'
     },
     {
         id: 3,
@@ -33,7 +36,8 @@ const products = [
         discount: 0,
         img: '/img/png/products/eos.png',
         raiting: 50,
-        category: 'Camera'
+        category: 'Camera',
+        img_category: '/img/svg/category/Camera.svg'
     },
     {
         id: 4,
@@ -42,7 +46,8 @@ const products = [
         discount: 15,
         img: '/img/png/products/71RdoeXxtrL.png',
         raiting: 30,
-        category: 'Animals'
+        category: 'HeadPhones',
+        img_category: '/img/svg/category/Headphone.svg'
     },
     {
         id: 5,
@@ -51,7 +56,8 @@ const products = [
         discount: 78,
         img: '/img/png/products/Copa_Sense.png',
         raiting: 100,
-        category: 'Sport'
+        category: 'Gaming',
+        img_category: '/img/svg/category/Gamepad.svg'
     },
     {
         id: 6,
@@ -60,7 +66,8 @@ const products = [
         discount: 0,
         img: '/img/png/products/curology-j.png',
         raiting: 48,
-        category: 'Health'
+        category: 'Health',
+        img_category: ''
     },
     {
         id: 7,
@@ -69,7 +76,9 @@ const products = [
         discount: 7,
         img: '/img/png/products/gammaxx.png',
         raiting: 41,
-        category: 'Computer'
+        category: 'Computer',
+        img_category: '/img/svg/category/Computer.svg'
+
     },
     {
         id: 8,
@@ -78,7 +87,8 @@ const products = [
         discount: 10,
         img: '/img/png/products/GP11_PRD3 1.png',
         raiting: 81,
-        category: 'Gaming'
+        category: 'Gaming',
+        img_category: '/img/svg/category/Gamepad.svg'
     },
     {
         id: 9,
@@ -87,7 +97,8 @@ const products = [
         discount: 0,
         img: '/img/png/products/ideapad-gaming.png',
         raiting: 15,
-        category: 'Computer'
+        category: 'Computer',
+        img_category: '/img/svg/category/Computer.svg'
     },
     {
         id: 10,
@@ -96,7 +107,8 @@ const products = [
         discount: 60,
         img: '/img/png/products/The-North-Face.png',
         raiting: 50,
-        category: 'Clothes'
+        category: 'Clothes',
+        img_category: ''
     },
     {
         id: 11,
@@ -105,7 +117,8 @@ const products = [
         discount: 23,
         img: '/img/png/products/Light-Gucci-Savoy.png',
         raiting: 0,
-        category: 'Bags'
+        category: 'Bags',
+        img_category: ''
     },
     {
         id: 12,
@@ -114,7 +127,8 @@ const products = [
         discount: 14,
         img: '/img/png/products/sam-moghadam-khamseh.png',
         raiting: 51,
-        category: 'Furniture'
+        category: 'Furniture',
+        img_category: ''
     },
     {
         id: 13,
@@ -123,7 +137,8 @@ const products = [
         discount: 0,
         img: '/img/png/products/New-Mercedes-Benz-Gtr.png',
         raiting: 0,
-        category: 'Toys'
+        category: 'Toys',
+        img_category: ''
     },
     {
         id: 14,
@@ -132,7 +147,8 @@ const products = [
         discount: 5,
         img: '/img/png/products/Reversible-quilted.png',
         raiting: 93,
-        category: 'Clothes'
+        category: 'Clothes',
+        img_category: ''
 
     },
     {
@@ -142,7 +158,8 @@ const products = [
         discount: 0,
         img: '/img/png/products/sam-moghadam-khamseh-kv.png',
         raiting: 100,
-        category: 'Furniture'
+        category: 'Furniture',
+        img_category: ''
     },
 ]
 
