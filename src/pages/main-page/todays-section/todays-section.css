@@ -9,3 +9,10 @@
     justify-content: space-between;
     gap: 30px;
 }
+
+.flash-sales-products__view-btn{
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+}

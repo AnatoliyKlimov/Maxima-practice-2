@@ -7,14 +7,16 @@ function CardProduct(props) {
         <>
             <div className='card-product'>
                 <div className="card-product-main-block">
-                    <div className="card-product-main-block-up">
                         <div className="card-product-main-block__rect">-{props.discount}%</div>
-                        <img className='card-product-main-block__img' src={props.img} alt={props.name}/>
+                        <div className="card-product-main-block__img-block">
+                            
+                          <img className='card-product-main-block__img' src={props.img} alt={props.name}/>  
+                        </div>
+                        
                         <div className="card-product-main-block-btns">
                             <button className="card-product-main-btns card-product-btn-like"></button>
                             <button className="card-product-main-btns card-product-btn-view"></button>
                         </div>
-                    </div>
                     <button className='card-product-add-cart'>Add To Cart</button>
                 </div>
                 <div className="card-product-secondary-block">

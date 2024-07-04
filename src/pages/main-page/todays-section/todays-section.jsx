@@ -4,11 +4,12 @@ import SaleTimerBlock from '../../../components/sale-timer-block/sale-timer-bloc
 import ScrollBtns from '../../../components/scroll-btns/scroll-btns';
 import CardProduct from '../../../components/card-product/card-product';
 import data from '../../../components/app/data';
-
+import ViewButton from '../../../components/view-button/view-button';
 
 function TodaysSection() {
     const main_title = "Today’s";
     const secondary_title = "Flash Sales";
+    const ViewAllProducts_btn = "View All Products";
 
     let product = data.map((elem, index) => {
         if (index < 4) {
@@ -35,6 +36,9 @@ function TodaysSection() {
                         />
                         <div className="flash-sales-products">
                             {product}
+                        </div>
+                        <div className="flash-sales-products__view-btn">
+                            <ViewButton name={ViewAllProducts_btn} />
                         </div>
                     </div>
                 </div>
