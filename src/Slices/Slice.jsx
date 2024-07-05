@@ -16,6 +16,7 @@ const Slice = createSlice({
       const item = [];
       item.push(action.payload[0]);
       item.push(action.payload[1]);
+      item.push(action.payload[2]);
       if (state.auth.find((element) => item[0] === element[0])) return;
       state.auth.push(item);
     },
