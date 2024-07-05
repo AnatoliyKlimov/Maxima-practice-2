@@ -10,7 +10,6 @@ function ThisMonthSection() {
     const ViewAllProducts_btn = "View All";
 
     let product = data.map((elem, index) => {
-        if (index < 4) {
             return <CardProduct
                 key={index}
                 discount={elem.discount}
@@ -18,7 +17,6 @@ function ThisMonthSection() {
                 name={elem.name}
                 raiting={elem.raiting}
             />
-        }
     });
 
     return (
@@ -43,11 +41,11 @@ function ThisMonthSection() {
                                 <div className="marketing-left-timer">
                                     <div className="marketing-left-timer-block-value">
                                         <p className="marketing-timer-block-value">23</p>
-                                        <p className="marketing-timer-block-descr">Hours</p>
+                                        <p className="marketing-timer-block-descr">Days</p>
                                     </div>
                                     <div className="marketing-left-timer-block-value">
                                         <p className="marketing-timer-block-value">05</p>
-                                        <p className="marketing-timer-block-descr">Days</p>
+                                        <p className="marketing-timer-block-descr">Hours</p>
                                     </div>
                                     <div className="marketing-left-timer-block-value">
                                         <p className="marketing-timer-block-value">59</p>

@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+    overflow: hidden;
 }
 
 .flash-sales-products__view-btn{

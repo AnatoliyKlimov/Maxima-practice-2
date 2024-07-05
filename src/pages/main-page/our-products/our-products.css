@@ -2,6 +2,10 @@
     padding: 0 135px 71px 135px;
 }
 
+.browse-by-category{
+    overflow: hidden;
+}
+
 .our-products__view-btn{
     padding: 60px 0;
     display: flex;

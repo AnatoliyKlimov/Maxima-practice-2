@@ -5,22 +5,29 @@ import ScrollBtns from '../../../components/scroll-btns/scroll-btns';
 import CardProduct from '../../../components/card-product/card-product';
 import data from '../../../components/app/data';
 import ViewButton from '../../../components/view-button/view-button';
+import { useRef} from 'react';
+
 
 function TodaysSection() {
     const main_title = "Today’s";
     const secondary_title = "Flash Sales";
     const ViewAllProducts_btn = "View All Products";
+    const listRef = useRef(null);
+
+ function scrollContainerBy(step) {
+        const { current } = listRef;
+        current.scrollBy({ left: step, behavior: 'smooth' });
+    }
 
     let product = data.map((elem, index) => {
-        if (index < 4) {
-            return <CardProduct
-                key={index}
-                discount={elem.discount}
-                img={elem.img}
-                name={elem.name}
-                raiting={elem.raiting}
-            />
-        }
+        return <CardProduct
+            key={index}
+            discount={elem.discount}
+            img={elem.img}
+            name={elem.name}
+            raiting={elem.raiting}
+
+        />
     });
 
     return (
@@ -32,9 +39,12 @@ function TodaysSection() {
                             main_title={main_title}
                             secondary_title={secondary_title}
                             sale_timer_block={<SaleTimerBlock />}
-                            scrooll_btns={<ScrollBtns />}
+                            scrooll_btns={<ScrollBtns
+                                left_btn={scrollContainerBy}
+                                right_btn={scrollContainerBy}
+                            />}
                         />
-                        <div className="flash-sales-products">
+                        <div className="flash-sales-products" ref={listRef}>
                             {product}
                         </div>
                         <div className="flash-sales-products__view-btn">

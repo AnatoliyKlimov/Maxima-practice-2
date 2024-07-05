@@ -5,7 +5,7 @@ function CardProduct(props) {
 
     return (
         <>
-            <div className='card-product'>
+            <div className='card-product' {...props.ref}>
                 <div className="card-product-main-block">
                         <div className="card-product-main-block__rect">-{props.discount}%</div>
                         <div className="card-product-main-block__img-block">

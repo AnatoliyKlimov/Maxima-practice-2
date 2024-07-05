@@ -1,8 +1,10 @@
 import '../sale-timer-block/sale-timer-block.css';
 
 
-function SaleTimerBlock() {
 
+
+
+function SaleTimerBlock() {
     return (
         <>
             <div className='sale-timer-block'>
