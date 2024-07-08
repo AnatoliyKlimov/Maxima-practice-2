@@ -1,0 +1,179 @@
+.featured-section {
+    padding: 0 135px 71px 135px;
+}
+
+
+.featured-section-blocks {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 60px;
+    gap: 30px;
+}
+
+.featured-section-blocks-left {
+    background-color: rgb(0, 0, 0);
+    border-radius: 4px;
+}
+
+.featured-section-blocks-descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url('../../../../public/img/png/playstation.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-width: 570px;
+    width: 100%;
+    min-height: 600px;
+    height: 100%;
+    gap: 16px;
+    padding: 1px 1px 32px 29px;
+}
+
+.featured-section-blocks-left-name {
+    color: rgb(250, 250, 250);
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+}
+
+.featured-section-blocks-left-descr {
+    color: rgb(250, 250, 250);
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    max-width: 255px;
+    width: 100%;
+}
+
+.featured-section-blocks-left-link {
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    text-decoration: none;
+    border-bottom: none;
+    width: fit-content;
+}
+
+.featured-section-blocks-left-link:hover {
+    border-bottom: 1px solid rgb(250, 250, 250);
+}
+
+.featured-section-blocks-right {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 570px;
+    width: 100%;
+    min-height: 284px;
+    height: 100%;
+
+}
+
+.featured-section-blocks-right-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url('../../../../public/img/png/woman.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    min-width: 432px;
+    width: 100%;
+    min-height: 286px;
+    height: 100%;
+    background-color: rgb(13, 13, 13);
+    padding-left: 24px;
+    border-radius: 4px;
+}
+
+.featured-section-blocks-right-down {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.featured-section-blocks-right-d {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    flex-direction: column;
+    background-color: rgb(28, 28, 28);
+    max-width: 270px;
+    width: 100%;
+    min-height: 284px;
+    height: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 24px 40px 24px 24px;
+    border-radius: 4px;
+
+}
+
+.featured-section-blocks-right-down-right {
+    background-image: url('../../../../public/img/png/gucci.png');
+}
+
+.featured-section-blocks-right-down-left {
+    background-image: url('../../../../public/img/png/Frame707.png');
+}
+
+.delevery-block-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 88px;
+}
+
+.delevery-block-main {
+    padding: 140px 0;
+}
+
+.delevery-block-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+}
+
+.delevery-img {
+    background-image: url('../../../../public/img/svg/Services.svg');
+}
+
+.contacts-img {
+    background-image: url('../../../../public/img/svg/Services\ 2.svg');
+
+}
+
+.security-img {
+    background-image: url('../../../../public/img/svg/Services\ 3.svg');
+
+}
+
+.delevery-title {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    padding-top: 24px;
+}
+
+.delevery-descr {
+    color: rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    padding-top: 8px;
+}

@@ -1,0 +1,41 @@
+.title-section-main-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.title-section-main-rect {
+    background-color: rgb(219, 68, 68);
+    padding: 20px 10px;
+    border-radius: 4px;
+}
+
+.title-section-main-descr {
+    color: rgb(219, 68, 68);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+}
+
+.title-section-secondary-row {
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title-section-secondary-sale-block{
+    display: flex;
+    align-items: normal;
+    gap: 87px;
+}
+.title-section-secondary-descr {
+    font-family: "Inter", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+}

@@ -1,0 +1,33 @@
+.sale-timer-block {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.timer-value-block-d {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+}
+
+.timer-value-block-v {
+    color: rgb(0, 0, 0);
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+}
+
+.timer-splitter{
+   color: rgb(224, 117, 117);
+   font-family: "Inter", sans-serif;
+   font-size: 32px;
+   font-weight: 700;
+   line-height: 30px;
+
+}
