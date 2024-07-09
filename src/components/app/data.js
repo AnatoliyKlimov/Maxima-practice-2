@@ -7,7 +7,8 @@ const products = [
         img: '/img/png/products/g92.png',
         raiting: 88,
         category: 'Phones',
-        img_category: '/img/svg/category/CellPhone.svg'
+        img_category: '/img/svg/category/CellPhone.svg',
+        img_categoryA: '/img/svg/category/CellPhoneW.svg'
     },
     {
         id: 1,
@@ -17,7 +18,8 @@ const products = [
         img: '/img/png/products/ak-90.png',
         raiting: 75,
         category: 'Computers',
-        img_category: '/img/svg/category/Computer.svg'
+        img_category: '/img/svg/category/Computer.svg',
+        img_categoryA: '/img/svg/category/ComputerW.svg',
     },
     {
         id: 2,
@@ -27,7 +29,8 @@ const products = [
         img: '/img/png/products/g27cq4.png',
         raiting: 99,
         category: 'SmartWatch',
-        img_category: '/img/svg/category/SmartWatch.svg'
+        img_category: '/img/svg/category/SmartWatch.svg',
+        img_categoryA: '/img/svg/category/SmartWatchW.svg'
     },
     {
         id: 3,
@@ -37,7 +40,8 @@ const products = [
         img: '/img/png/products/eos.png',
         raiting: 50,
         category: 'Camera',
-        img_category: '/img/svg/category/Camera.svg'
+        img_category: '/img/svg/category/Camera.svg',
+        img_categoryA: '/img/svg/category/CameraW.svg'
     },
     {
         id: 4,
@@ -47,7 +51,8 @@ const products = [
         img: '/img/png/products/71RdoeXxtrL.png',
         raiting: 30,
         category: 'HeadPhones',
-        img_category: '/img/svg/category/Headphone.svg'
+        img_category: '/img/svg/category/Headphone.svg',
+        img_categoryA: '/img/svg/category/HeadphoneW.svg'
     },
     {
         id: 5,
@@ -57,7 +62,8 @@ const products = [
         img: '/img/png/products/Copa_Sense.png',
         raiting: 100,
         category: 'Gaming',
-        img_category: '/img/svg/category/Gamepad.svg'
+        img_category: '/img/svg/category/Gamepad.svg',
+        img_categoryA: '/img/svg/category/GamepadW.svg'
     },
     {
         id: 6,
@@ -67,7 +73,8 @@ const products = [
         img: '/img/png/products/curology-j.png',
         raiting: 48,
         category: 'Health',
-        img_category: ''
+        img_category: '',
+        img_categoryA: '',
     },
     {
         id: 7,
@@ -77,8 +84,8 @@ const products = [
         img: '/img/png/products/gammaxx.png',
         raiting: 41,
         category: 'Computer',
-        img_category: '/img/svg/category/Computer.svg'
-
+        img_category: '/img/svg/category/Computer.svg',
+        img_categoryA: '/img/svg/category/ComputerW.svg'
     },
     {
         id: 8,
@@ -88,7 +95,8 @@ const products = [
         img: '/img/png/products/GP11_PRD3 1.png',
         raiting: 81,
         category: 'Gaming',
-        img_category: '/img/svg/category/Gamepad.svg'
+        img_category: '/img/svg/category/Gamepad.svg',
+        img_categoryA: '/img/svg/category/GamepadW.svg'
     },
     {
         id: 9,
@@ -98,7 +106,8 @@ const products = [
         img: '/img/png/products/ideapad-gaming.png',
         raiting: 15,
         category: 'Computer',
-        img_category: '/img/svg/category/Computer.svg'
+        img_category: '/img/svg/category/Computer.svg',
+        img_categoryA: '/img/svg/category/ComputerW.svg'
     },
     {
         id: 10,
@@ -108,7 +117,8 @@ const products = [
         img: '/img/png/products/The-North-Face.png',
         raiting: 50,
         category: 'Clothes',
-        img_category: ''
+        img_category: '',
+        img_categoryA: ''
     },
     {
         id: 11,
@@ -118,7 +128,8 @@ const products = [
         img: '/img/png/products/Light-Gucci-Savoy.png',
         raiting: 0,
         category: 'Bags',
-        img_category: ''
+        img_category: '',
+        img_categoryA: ''
     },
     {
         id: 12,
@@ -128,7 +139,8 @@ const products = [
         img: '/img/png/products/sam-moghadam-khamseh.png',
         raiting: 51,
         category: 'Furniture',
-        img_category: ''
+        img_category: '',
+        img_categoryA: ''
     },
     {
         id: 13,
@@ -138,7 +150,8 @@ const products = [
         img: '/img/png/products/New-Mercedes-Benz-Gtr.png',
         raiting: 0,
         category: 'Toys',
-        img_category: ''
+        img_category: '',
+        img_categoryA: ''
     },
     {
         id: 14,
@@ -148,7 +161,8 @@ const products = [
         img: '/img/png/products/Reversible-quilted.png',
         raiting: 93,
         category: 'Clothes',
-        img_category: ''
+        img_category: '',
+        img_categoryA: ''
 
     },
     {
@@ -159,7 +173,8 @@ const products = [
         img: '/img/png/products/sam-moghadam-khamseh-kv.png',
         raiting: 100,
         category: 'Furniture',
-        img_category: ''
+        img_category: '',
+        img_categoryA: ''
     },
 ]
 
