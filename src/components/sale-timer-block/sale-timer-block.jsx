@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 function SaleTimerBlock(props) {
     let timerId = null;
     let days = 0, hours = 0, minutes = 0, seconds = 0;
-    let finalDate = new Date(2024, 6, 10, 14, 15, 0);
+    let finalDate = new Date(2024, 6, 31, 14, 15, 45);
 
     function getSaleTime() {
         let currentDate = new Date();
@@ -75,59 +75,6 @@ function SaleTimerBlock(props) {
             secondsView.textContent = seconds;
         }
     }
-
-
-
-    //  console.log(timerId )
-
-    // let finalDate = `${days} : ${hours} : ${minutes} : ${seconds}`;
-    // let date = new Date(props.days + props.hours + props.minutes + props.seconds);
-    // console.log(date)
-
-
-    // const [over, setOver] = useState(false);
-    //  let[[d, h, m, s], setTime]  = useState([days, hours, minutes, seconds]);
-
-    // console.log(seconds)
-
-    // const tick =()=>{
-    //     if(over) return;
-    //     setOver(true)
-    //     if(s!=0){
-    //         setTime(s--);
-    //     }
-    //     else if(s==0){
-    //         setTime(s = 59);
-    //         setTime(m--);
-    //     }
-    //     else if(m==0){
-    //         setTime(m = 59);
-    //         setTime(h--);
-    //     }
-    //     else if(h==0){
-    //         setTime(d--);
-    //     }
-    // if (hours === 0 && minutes === 0 && seconds === 0) {
-    //     setOver(true);
-    //     console.log("1");
-    // } else if (minutes === 0 && seconds === 0) {
-    //     setTime([hours - 1,  59, 59]);
-    //     console.log("2");
-    // } else if (seconds == 0) {
-    //     setTime([hours, minutes - 1, 59]);
-    //     console.log("3");
-    // } else {
-    //     setTime([h, m, s - 1]);
-    //     console.log("4");
-    // }
-    // console.log(seconds, minutes, hours,  days)
-    // }
-
-    // useEffect(()=>{
-    //     const timerID = setInterval(() => tick(), 1000);
-    //     return () => clearInterval(timerID);
-    // })
-
 
     getSaleTime();
     timerId = setInterval(getSaleTime, 1000);
