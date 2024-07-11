@@ -105,8 +105,6 @@ function SaleTimerBlock(props) {
 
     )
 
-
-
 }
 
 export default SaleTimerBlock;
