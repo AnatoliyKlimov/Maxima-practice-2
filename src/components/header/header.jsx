@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../header/header.css';
 
 function Header() {
@@ -39,7 +40,7 @@ function Header() {
                                     <a href="#"></a>
                                 </div>
                                 <div className="icon user-block">
-                                    <a href="#"></a>
+                                    <Link to="/account"/>
                                 </div>
                             </div>
                         </div>
