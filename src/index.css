@@ -22,3 +22,17 @@ code {
   width: 100%;
   margin: 0 auto;
 }
+.isActive {
+  color: #db4444 !important;
+  text-decoration: underline !important;
+  opacity: 100% !important;
+  text-decoration: none !important;
+}
+.tapActive {
+  background-color: #db4444 !important;
+  color: white !important;
+  border: none !important;
+  text-decoration: underline !important;
+  opacity: 100% !important;
+  text-decoration: none !important;
+}

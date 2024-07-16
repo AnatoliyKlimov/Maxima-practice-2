@@ -14,7 +14,7 @@ export default function AccountPage() {
                     <div className={styles.blockUp}>
                         <p className={styles.paragraph}>Manage My Account</p>
                         <ul className={styles.profile}>
-                            <li><NavLink className={({ isActive }) => isActive ? 'active' : ''} to='/account'>My Profile</NavLink></li>
+                            <li><NavLink className={({ isActive }) => isActive ? 'isActive' : ''} to='/account'>My Profile</NavLink></li>
                             <li><NavLink to='/adressBook'>Address Book</NavLink></li>
                             <li><NavLink to='/myPaymentOptions'>My Payment Options</NavLink></li>
                         </ul>

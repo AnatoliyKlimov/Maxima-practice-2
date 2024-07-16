@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 import '../header/header.css';
 
 function Header() {
@@ -22,10 +22,10 @@ function Header() {
                     <div className="bottom-header">
                         <h1 className="logo">Exclusive</h1>
                         <nav className="navigation">
-                            <a href="#" className="navigation-link">Home</a>
-                            <a href="#" className="navigation-link">Contact</a>
-                            <a href="#" className="navigation-link">About</a>
-                            <a href="#" className="navigation-link">Sign Up</a>
+                            <NavLink  to='/' className="navigation-link">Home</NavLink>
+                            <NavLink  to='/contact' className="navigation-link">Contact</NavLink>
+                            <NavLink  to='/about' className="navigation-link">About</NavLink>
+                            <NavLink  to='/sign_up' className="navigation-link">Sign Up</NavLink>
                         </nav>
                         <div className="search-block">
                             <div className="form-search">
@@ -39,9 +39,7 @@ function Header() {
                                 <div className="icon cart-block">
                                     <a href="#"></a>
                                 </div>
-                                <div className="icon user-block">
-                                    <Link to="/account"/>
-                                </div>
+                                    <NavLink className="icon user-block" to="/account"/>
                             </div>
                         </div>
                     </div>

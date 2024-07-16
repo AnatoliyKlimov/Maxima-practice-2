@@ -1,22 +1,22 @@
-import Header from '../header/header';
-import Footer from '../footer/footer';
 import Login from '../login/login';
-import { Provider } from "react-redux";
 import MainPage from "../../pages/main-page/main-page";
 import { Route, Routes } from 'react-router-dom'
-import AccountPage from '../../pages/my-account-page/my-account-page'
+import { Layout } from '../layout/layout';
+import { AccountPage, ContactPage, ProductDetails } from '../../pages/'
 // import NotFoundPage from "../../pages/not-found-page/not-found-page";
 
 function App() {
   return (
     <>
-      <Header />
-      <Login />
+      {/* <Login /> */}
       <Routes>
-        <Route path='/' element={<MainPage />} />
-        <Route path='/account' element={<AccountPage />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<MainPage />}/>
+          <Route path="/account" element={<AccountPage />}/>
+          <Route path="/contact" element={<ContactPage />}/>
+          <Route path="/details" element={<ProductDetails />}/>
+        </Route>
       </Routes>
-      <Footer />
       {/* <NotFoundPage/> */}
     </>
   );
