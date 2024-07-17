@@ -140,7 +140,8 @@
     background-image: url('../../../public/img/svg/like.svg');
     background-repeat: no-repeat;
     background-position: center;
-    padding: 12px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
 }
 
@@ -150,4 +151,5 @@
 
 .user-block {
     background-image: url('../../../public/img/svg/user.svg');
+    opacity: 100%;
 }

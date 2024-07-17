@@ -1,0 +1,189 @@
+.main {
+  display: inline-flex;
+  height: 950px;
+  padding-top: 80px;
+}
+.main ul {
+  list-style-type: none;
+  padding-left: 35px;
+  justify-content: space-between;
+}
+.main ul li {
+  margin: 10px 0;
+}
+.main a {
+  color: black;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 50%;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.path {
+  display: inline-flex;
+  height: 21px;
+  width: 160px;
+  padding-bottom: 80px;
+}
+.span {
+  color: black;
+  white-space: nowrap;
+  font-family: "Poppins";
+  width: 62px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  opacity: 50%;
+}
+.paragraph {
+  color: black;
+  font-family: "Poppins";
+  width: 166px;
+  height: 21px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  white-space: nowrap;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 135px;
+  gap: 24px;
+}
+.profile {
+  width: 165px;
+  height: 88px;
+}
+.blockUp {
+  height: 128px;
+}
+.blockBottom {
+  height: 96px;
+}
+.central {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 870px;
+  margin-left: 100px;
+  padding-bottom: 50px;
+}
+.welcome {
+  white-space: nowrap;
+  display: inline-flex;
+  width: 139px;
+}
+.welcome .paragraph {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.mr_ms {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #db4444;
+  opacity: 100%;
+  height: 21px;
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 870px;
+  height: 630px;
+  border-radius: 4px 0px 0px 0px;
+  box-shadow: 0px 1px 13px 0px #0000000d;
+}
+.editProfile {
+  font-family: "Poppins";
+  width: 155px;
+  height: 28px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #db4444;
+  padding: 40px 790px 0 0;
+  margin: 0;
+  white-space: nowrap;
+}
+.inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 330px;
+  padding: 0 80px;
+  gap: 8px 50px;
+  margin-bottom: 8px;
+}
+.inputBox .paragraph {
+  width: 330px;
+  padding-top: 16px;
+}
+.inputBox input {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 330px;
+  height: 47px;
+  border-radius: 4px;
+  border: none;
+  background: #f5f5f5;
+  padding-left: 16px;
+}
+.inputBoxPass {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 710px;
+  padding: 0 80px;
+  gap: 16px 0;
+}
+.inputBoxPass input {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 710px;
+  height: 47px;
+  border-radius: 4px;
+  border: none;
+  background: #f5f5f5;
+  padding-left: 16px;
+}
+.inputBoxPass .paragraph {
+  padding-top: 16px;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+  width: 710px;
+  height: 56px;
+  padding: 0 80px;
+}
+.buttonWhite {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border: none;
+  background: #ffffff;
+  padding: 16px 32px;
+}
+.buttonRed {
+  width: 214px;
+  height: 56px;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  background: #db4444;
+}
