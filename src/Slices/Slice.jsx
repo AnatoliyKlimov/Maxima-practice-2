@@ -3,9 +3,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  login: 0,
   auth: [],
-  loginIn: JSON.parse(localStorage.getItem('loginIn')) || false,
+  loginIn: false,
 };
 
 const Slice = createSlice({
@@ -20,8 +19,14 @@ const Slice = createSlice({
       if (state.auth.find((element) => item[0] === element[0])) return;
       state.auth.push(item);
     },
+    logIN: (state, action) => {
+      return {
+        ...state, // Копируем старый объект state
+          loginIn: action.payload // Заменяем login на новый
+      };
+    },
   },
 });
 
-export const { addNewAuth } = Slice.actions;
+export const { addNewAuth, logIN } = Slice.actions;
 export default Slice.reducer;

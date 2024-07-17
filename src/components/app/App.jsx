@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <Header />
-      <Checkout />
-   {/* <Login /> */}
+     {/*  <Checkout />*/}
+    <Login /> 
       <Footer />
       {/* <MainPage/> */}
 
