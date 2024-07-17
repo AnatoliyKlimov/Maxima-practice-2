@@ -13,7 +13,7 @@ function NotFoundPage() {
                 <section className='not-found-section'>
                     <p className="home-page">Home / <span className="current-page">404 Error</span></p>
                     <div className="not-found-block">
-                        <h1 className="not-found-title">404 Not Found</h1>
+                        <h2 className="not-found-title">404 Not Found</h2>
                         <p className="not-found-descr">Your visited page not found. You may go home page.</p>
                         <div className="not-found-back__btn">
                             <ViewButton name={nameButton} />

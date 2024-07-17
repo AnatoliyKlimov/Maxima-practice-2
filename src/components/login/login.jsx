@@ -3,9 +3,10 @@ import login from './img/login.png';
 import React from 'react';
 // import { Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
-import { addNewAuth } from '../../Slices/Slice';
+import { addNewAuth, logIN } from '../../Slices/Slice';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
+
 function Login({ onLogin }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -14,6 +15,7 @@ function Login({ onLogin }) {
 
   const [logstatus, setlogstatus] = useState('reg');
   const { auth } = useSelector((state) => state.cart);
+  
   const dispatch = useDispatch();
   const handleSubmit = (e) => {
     console.log(auth);
@@ -49,6 +51,7 @@ function Login({ onLogin }) {
           if (auth[i][1] === email) {
             if (password === auth[i][2]) {
               setMessage('Успешный вход');
+              dispatch(logIN(true));
             } else {
               setMessage('Не верный пароль');
             }
