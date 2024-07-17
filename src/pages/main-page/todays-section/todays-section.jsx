@@ -5,7 +5,7 @@ import ScrollBtns from '../../../components/scroll-btns/scroll-btns';
 import CardProduct from '../../../components/card-product/card-product';
 import data from '../../../components/app/data';
 import ViewButton from '../../../components/view-button/view-button';
-import { useRef} from 'react';
+import { useRef } from 'react';
 
 
 function TodaysSection() {
@@ -14,7 +14,7 @@ function TodaysSection() {
     const ViewAllProducts_btn = "View All Products";
     const listRef = useRef(null);
 
- function scrollContainerBy(step) {
+    function scrollContainerBy(step) {
         const { current } = listRef;
         current.scrollBy({ left: step, behavior: 'smooth' });
     }

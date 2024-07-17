@@ -14,6 +14,7 @@ function CategoriesSection() {
             key={index}
             category = {elem.category}
             img_category = {elem.img_category}
+            img_categoryA = {elem.img_categoryA}
         />  
         }
         
