@@ -17,7 +17,7 @@ function CardProduct(props) {
                             <button className="card-product-main-btns card-product-btn-like"></button>
                             <button className="card-product-main-btns card-product-btn-view"></button>
                         </div>
-                    <button className='card-product-add-cart'>Add To Cart</button>
+                    <button className='card-product-add-cart' onClick={()=>props.addCart(props.elem)}>Add To Cart</button>
                 </div>
                 <div className="card-product-secondary-block">
                     <p className="card-product-name">{props.name}</p>

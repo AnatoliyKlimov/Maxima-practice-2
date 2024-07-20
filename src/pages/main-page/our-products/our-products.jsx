@@ -5,25 +5,39 @@ import data from '../../../components/app/data';
 import ViewButton from '../../../components/view-button/view-button';
 import ScrollBtns from '../../../components/scroll-btns/scroll-btns';
 import { useRef} from 'react';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 function OurProducts() {
     const main_title = "Our Products";
     const secondary_title = "Explore Our Products";
     const ViewAllProducts_btn = "View All Products";
     const listRef = useRef(null);
-    
+    const dispatch = useDispatch();
+
     function scrollContainerBy(step) {
         const { current } = listRef;
         current.scrollBy({ left: step, behavior: 'smooth' });
     }
 
+    function addProduct(data) {
+        dispatch({
+            type: 'ADD_PRODUCT',
+            id: data.id,
+            data: data,
+            price: data.price
+        });
+    }
+
     let product = data.map((elem, index) => {
             return <CardProduct
                 key={index}
+                elem = {elem}
                 discount={elem.discount}
                 img={elem.img}
                 name={elem.name}
                 raiting={elem.raiting}
+                addCart = {addProduct}
             />
         })
     return (

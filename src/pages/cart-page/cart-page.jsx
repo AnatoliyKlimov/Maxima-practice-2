@@ -1,18 +1,42 @@
 import './cart-page.css'
 import CartProducts from '../../components/cart-products/cart-products';
 import data from '../../../src/components/app/data';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 function CartPage() {
+    const totalPrice = useSelector(store => store.totalPrice);
+    const countProducts = useSelector(store => store.countProducts);
+    const basketProducts = useSelector(store => store.basketProducts);
+    const dispatch = useDispatch();
+    let count = 0;
+
+    function RemoveProduct(e, price) {
+        dispatch({
+            type: 'REMOVE_PRODUCT',
+            id: parseInt(e.target.id),
+            price: price
+        });
+    }
+
+    let product = basketProducts.map((elem, index) => {
+        if (index === basketProducts.indexOf(elem)) {
+            return <CartProducts
+                key={index}
+                id = {elem.id}
+                img={elem.img}
+                name={elem.name}
+                price={elem.price}
+                count={countProducts}
+                total = {totalPrice}
+                removeCart = {RemoveProduct}
+            />
+        }
 
 
-    let product = data.map((elem, index) => {
-        return <CartProducts
-            key={index}
-            img={elem.img}
-            name={elem.name}
-            price = {elem.price}
-        />
     });
+
+
 
     return (
         <>
@@ -41,13 +65,13 @@ function CartPage() {
                             <p className='span_total'>Cart Total</p>
                             <div className='total_container'>
                                 <div className='total_sub'><span>Subtotal</span>
-                                    <span>$1750</span>
+                                    <span>$ {totalPrice}</span>
                                 </div>
                                 <div className='total_sub'><span>Shipping</span>
                                     <span>Free</span>
                                 </div>
                                 <div className='total_sub total'><span>Total</span>
-                                    <span>$1750</span>
+                                    <span>$ {totalPrice}</span>
                                 </div>
                             </div>
                             <button className='cart_checkout'>Procees to checkout</button>

@@ -3,6 +3,8 @@ import './cart-products.css'
 
 function CartProducts(props) {
 
+    let total = props.count*props.price;
+
     return (
         <>
             <div className='cart_product'>
@@ -10,13 +12,13 @@ function CartProducts(props) {
                     <div className='product_name'>
                         <div className="product-icon">
                             <img className='product-img' src={props.img} alt={props.name} />
-                            <button className='del-product'></button>
+                            <button id = {props.id} className='del-product' onClick={(e)=>props.removeCart(e, props.price)}></button>
                         </div>
                         <span>{props.name}</span>
                     </div>
                     <span className='price'>$ {props.price}</span>
-                    <div className='quantity'>2</div>
-                    <span>650</span>
+                    <div className='quantity'>{props.count}</div>
+                    <span>$ {total}</span>
                 </div>
             </div>
         </>

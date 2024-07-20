@@ -6,6 +6,8 @@ import CardProduct from '../../../components/card-product/card-product';
 import data from '../../../components/app/data';
 import ViewButton from '../../../components/view-button/view-button';
 import { useRef } from 'react';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 
 function TodaysSection() {
@@ -13,23 +15,37 @@ function TodaysSection() {
     const secondary_title = "Flash Sales";
     const ViewAllProducts_btn = "View All Products";
     const listRef = useRef(null);
+    const countProducts = useSelector(store => store.countProducts);
+    const totalPrice = useSelector(store => store.totalPrice);
+    const basketProducts = useSelector(store => store.basketProducts);
+    const dispatch = useDispatch();
 
     function scrollContainerBy(step) {
         const { current } = listRef;
         current.scrollBy({ left: step, behavior: 'smooth' });
     }
 
+    function addProduct(data) {
+        dispatch({
+            type: 'ADD_PRODUCT',
+            id: data.id,
+            data: data,
+            price: data.price
+        });
+    }
     let product = data.map((elem, index) => {
+
         return <CardProduct
             key={index}
+            elem = {elem}
             discount={elem.discount}
             img={elem.img}
             name={elem.name}
             raiting={elem.raiting}
-
+            addCart = {addProduct}
         />
     });
-
+  
     return (
         <>
             <section>
