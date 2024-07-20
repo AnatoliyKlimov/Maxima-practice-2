@@ -1,5 +1,5 @@
 import '../checkout/checkout.css'
-import monitor from '../cart/img/g27cq4-500x500 1.png'
+import monitor from '../checkout/img/g27cq4-500x500 1.png'
 import VISA from '../checkout/img/Frame 834.png'
 function Checkout() {
 

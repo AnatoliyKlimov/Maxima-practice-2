@@ -1,6 +1,6 @@
 import Login from '../login/login';
 import Checkout from '../checkout/checkout';
-import Cart from '../cart/cart';
+import CartPage from '../../pages/cart-page/cart-page';
 import MainPage from "../../pages/main-page/main-page";
 import { Route, Routes } from 'react-router-dom'
 import { Layout } from '../layout/layout';
@@ -20,7 +20,7 @@ function App() {
           <Route path="/account" element={<AccountPage />}/>
           <Route path="/contact" element={<ContactPage />}/>
           <Route path="/details" element={<ProductDetails />}/>
-          <Route path="/cart" element={<Cart />}/>
+          <Route path="/cart" element={<CartPage />}/>
         </Route>
       </Routes>
     </>
