@@ -20,17 +20,9 @@ function App() {
           <Route path="/account" element={<AccountPage />}/>
           <Route path="/contact" element={<ContactPage />}/>
           <Route path="/details" element={<ProductDetails />}/>
+          <Route path="/cart" element={<Cart />}/>
         </Route>
       </Routes>
-      <WishlistPage />
-      {/* <MainPage/> */}
-      <Header />
-     {/*  <Checkout />*/}
-    <Login /> 
-      <Footer />
-      {/* <MainPage/> */}
-      {/* <NotFoundPage/> */}
-      {/* <AboutPage /> */}
     </>
   );
 }

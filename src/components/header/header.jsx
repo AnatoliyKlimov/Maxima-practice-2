@@ -22,10 +22,10 @@ function Header() {
                     <div className="bottom-header">
                         <h1 className="logo">Exclusive</h1>
                         <nav className="navigation">
-                            <NavLink  to='/' className="navigation-link">Home</NavLink>
-                            <NavLink  to='/contact' className="navigation-link">Contact</NavLink>
-                            <NavLink  to='/about' className="navigation-link">About</NavLink>
-                            <NavLink  to='/sign_up' className="navigation-link">Sign Up</NavLink>
+                            <NavLink to='/' className="navigation-link">Home</NavLink>
+                            <NavLink to='/contact' className="navigation-link">Contact</NavLink>
+                            <NavLink to='/about' className="navigation-link">About</NavLink>
+                            <NavLink to='/sign_up' className="navigation-link">Sign Up</NavLink>
                         </nav>
                         <div className="search-block">
                             <div className="form-search">
@@ -36,10 +36,8 @@ function Header() {
                                 <div className="icon like-block">
                                     <a href="#"></a>
                                 </div>
-                                <div className="icon cart-block">
-                                    <a href="#"></a>
-                                </div>
-                                    <NavLink className="icon user-block" to="/account"/>
+                                <NavLink className="icon cart-block" to="/cart"/>
+                                <NavLink className="icon user-block" to="/account" />
                             </div>
                         </div>
                     </div>

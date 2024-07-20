@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import '../footer/footer.css';
 
 function Footer() {
@@ -32,7 +33,7 @@ function Footer() {
                                 <li className="descr-block">
                                     <a href="#" className='descr'>My Account</a>
                                     <a href="#" className='descr'>Login / Register</a>
-                                    <a href="#" className='descr'>Cart</a>
+                                    <NavLink to="/cart" className='descr'>Cart</NavLink>
                                     <a href="#" className='descr'>Wishlist</a>
                                     <a href="#" className='descr'>Shop</a>
                                 </li>
