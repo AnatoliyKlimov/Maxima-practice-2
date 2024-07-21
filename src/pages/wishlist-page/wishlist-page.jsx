@@ -27,7 +27,6 @@ function WishlistPage() {
 
     return (
         <>
-            <Header />
             <div className="container">
                 <section className="wishlist-section">
                     <div className="wishlist-title-block">
@@ -47,7 +46,6 @@ function WishlistPage() {
                     <div className="wishlist-cards-products">{product}</div>
                 </section>
             </div>
-            <Footer />
         </>
     )
 }

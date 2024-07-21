@@ -33,10 +33,8 @@ function Header() {
                                 <button className='search-btn'></button>
                             </div>
                             <div className="icons-block">
-                                <div className="icon like-block">
-                                    <a href="#"></a>
-                                </div>
-                                <NavLink className="icon cart-block" to="/cart"/>
+                                <NavLink className="icon like-block" to="/wishlist" />
+                                <NavLink className="icon cart-block" to="/cart" />
                                 <NavLink className="icon user-block" to="/account" />
                             </div>
                         </div>

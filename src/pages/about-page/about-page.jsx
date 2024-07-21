@@ -33,7 +33,6 @@ function AboutPage() {
 
     return (
         <>
-            <Header />
             <div className="container">
                 <section className='our-story-section'>
                     <p className="home-page">Home / <span className="current-page">About</span></p>
@@ -91,7 +90,6 @@ function AboutPage() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }

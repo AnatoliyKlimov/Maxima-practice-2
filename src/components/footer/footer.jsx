@@ -34,7 +34,7 @@ function Footer() {
                                     <a href="#" className='descr'>My Account</a>
                                     <a href="#" className='descr'>Login / Register</a>
                                     <NavLink to="/cart" className='descr'>Cart</NavLink>
-                                    <a href="#" className='descr'>Wishlist</a>
+                                    <NavLink to="/wishlist" className='descr'>Wishlist</NavLink>
                                     <a href="#" className='descr'>Shop</a>
                                 </li>
                             </ul>
