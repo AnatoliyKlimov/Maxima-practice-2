@@ -15,9 +15,6 @@ function TodaysSection() {
     const secondary_title = "Flash Sales";
     const ViewAllProducts_btn = "View All Products";
     const listRef = useRef(null);
-    const countProducts = useSelector(store => store.countProducts);
-    const totalPrice = useSelector(store => store.totalPrice);
-    const basketProducts = useSelector(store => store.basketProducts);
     const dispatch = useDispatch();
 
     function scrollContainerBy(step) {
@@ -33,6 +30,15 @@ function TodaysSection() {
             price: data.price
         });
     }
+
+    function addProductWishList(data) {
+        dispatch({
+            type: 'ADD_PRODUCT_WISHLIST',
+            id: data.id,
+            data: data,
+        });
+    }
+
     let product = data.map((elem, index) => {
 
         return <CardProduct
@@ -43,6 +49,7 @@ function TodaysSection() {
             name={elem.name}
             raiting={elem.raiting}
             addCart = {addProduct}
+            addWishlist = {addProductWishList}
         />
     });
   

@@ -14,7 +14,7 @@ function CardProduct(props) {
                         </div>
                         
                         <div className="card-product-main-block-btns">
-                            <button className="card-product-main-btns card-product-btn-like"></button>
+                            <button onClick={()=>props.addWishlist(props.elem)} className="card-product-main-btns card-product-btn-like"></button>
                             <button className="card-product-main-btns card-product-btn-view"></button>
                         </div>
                     <button className='card-product-add-cart' onClick={()=>props.addCart(props.elem)}>Add To Cart</button>

@@ -1,7 +1,5 @@
 import '../about-page/about-page.css';
 import '../main-page/featured-section/featured-section.css'
-import Header from '../../components/header/header';
-import Footer from '../../components/footer/footer';
 import dataS from './data/statistics-data.js';
 import dataW from './data/workers-data.js'
 import StatisticsBlock from '../../components/statistics-block/statistics-block.jsx';

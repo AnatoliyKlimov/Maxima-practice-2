@@ -1,17 +1,29 @@
 import '../wishlist-page/wishlist-page.css';
-import Header from '../../components/header/header';
-import Footer from '../../components/footer/footer';
-import TitleSection from '../../components/title-section/title-section';
 import ViewButton from '../../components/view-button/view-button';
 import CardProduct from '../../components/card-product/card-product';
 import '../../components/title-section/title-section.css'
 import data from '../../components/app/data.js';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 function WishlistPage() {
-    let count = 5;
+    const wishListCountProducts = useSelector(store => store.wishListCountProducts);
+    const wishListProducts = useSelector(store => store.wishListProducts);
+    const dispatch = useDispatch();
     const secondary_title = "Flash Sales";
     const wishlist_btn_name = 'Move All To Bag';
     const just_btn_name = 'See All';
+
+    let wishList = wishListProducts.map((elem, index) => {
+        return <CardProduct
+            key={index}
+            discount={elem.discount}
+            img={elem.img}
+            name={elem.name}
+            raiting={elem.raiting}
+
+        />
+    });
 
     let product = data.map((elem, index) => {
         return <CardProduct
@@ -30,10 +42,10 @@ function WishlistPage() {
             <div className="container">
                 <section className="wishlist-section">
                     <div className="wishlist-title-block">
-                        <h2 className="wishlist-section-title">Wishlist ({count})</h2>
+                        <h2 className="wishlist-section-title">Wishlist ({wishListCountProducts})</h2>
                         <ViewButton name={wishlist_btn_name} />
                     </div>
-                    <div className="wishlist-cards-products">{product}</div>
+                    <div className="wishlist-cards-products">{wishList}</div>
                 </section>
                 <section className="just-section">
                     <div className="wishlist-title-block">
