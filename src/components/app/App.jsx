@@ -10,12 +10,11 @@ function App() {
   return (
     <>
       <Header />
-     {/*  <Checkout />*/}
-    <Login /> 
+  { <Cart />}
+     {/* <Login /> */}
       <Footer />
-      {/* <MainPage/> */}
-
-      {/* <NotFoundPage/> */}
+{/* <MainPage/> */}
+{/* <NotFoundPage/> */}
     </>
   );
 }

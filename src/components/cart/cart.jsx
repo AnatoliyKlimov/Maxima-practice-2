@@ -1,5 +1,7 @@
 import '../cart/cart.css'
 import monitor from '../cart/img/g27cq4-500x500 1.png'
+import up from '../cart/img/up.png';
+import down from '../cart/img/down.png';
 function Cart() {
 
     return (
@@ -21,7 +23,13 @@ function Cart() {
                         <span>LCD Monitor</span>
                         </div>
                         <span className='price'>$650</span>
-                        <div className='quantity'>----</div>
+                        <div className='quantity'><div class="container_count">
+    <span className="number">01</span>
+    <div className="button_container_count">
+    <button className="button"> <img src={up} alt="Up Arrow" /></button>
+    <button className="button"> <img src={down} alt="Up Arrow" /></button>
+    </div>
+</div></div>
                         <span>650</span>
                     </div>
                 </div>
@@ -32,7 +40,13 @@ function Cart() {
                         <span>LCD Monitor</span>
                         </div>
                         <span className='price'>$650</span>
-                        <div className='quantity'>----</div>
+                        <div className='quantity'><div class="container_count">
+    <span className="number">01</span>
+    <div className="button_container_count">
+    <button className="button"> <img src={up} alt="Up Arrow" /></button>
+    <button className="button"> <img src={down} alt="Up Arrow" /></button>
+    </div>
+</div></div>
                         <span>650</span>
                     </div>
                 </div>
