@@ -3,40 +3,76 @@ import phoneImage from "../../components/assets/phone.svg"
 import mailImage from "../../components/assets/mail.svg"
 import React, { useState } from 'react';
 
-
 export default function ContactPage() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
-    const [formSubmitted, setFormSubmitted] = useState(false);
-  
-    const handleNameChange = (event) => {
-      setName(event.target.value);
-    };
-  
-    const handleEmailChange = (event) => {
-      setEmail(event.target.value);
-    };
-  
-    const handlePhoneChange = (event) => {
-      setPhone(event.target.value);
-    };
-  
-    const handleSubmit = (event) => {
-      event.preventDefault();
-      if (name && email && phone) {
-        // Все поля заполнены, можно отправить форму
-        console.log('Форма отправлена:', { name, email, phone });
-        setFormSubmitted(true);
-      } else {
-        // Не все поля заполнены, выводим сообщение об ошибке
-        console.log('Пожалуйста, заполните все обязательные поля');
-      }
-    };
-  
+    const [message, setMessage] = useState('');
+    const [nameDirty, setNameDirty] = useState(false);
+    const [emailDirty, setEmailDirty] = useState(false);
+    const [phoneDirty, setPhoneDirty] = useState(false);
+    const [messageDirty, setMessageDirty] = useState(false);
+    const [nameError, setNameError] = useState('Имя не может быть пустым');
+    const [emailError, setEmailError] = useState('Емейл не может быть пустым');
+    const [phoneError, setPhoneError] = useState('Телефон не может быть пустым');
+    const [messageError, setMessageError] = useState('Сообщение не может быть пустым');
 
 
+    const emailHandler = (e) => {
+        setEmail(e.target.value)
+        const emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
+        if (!emailExp.test(String(e.target.value).toLowerCase())) {
+            setEmailError('Некорректный емейл')
+        }
+        else {
+            setEmailError('')
+        }
+    }
 
+    const phoneHandler = (e) => {
+        setPhone(e.target.value)
+        const phoneExp = /^\d{10}$/;
+        if (!phoneExp.test(Number(e.target.value))) {
+            setPhoneError('Номер телефона должен содержать 10 цифр');
+        } else {
+            setPhoneError('');
+        }
+    };
+
+    const nameHandler = (e) => {
+        setName(e.target.value)
+        if ((e.target.value.length < 2)) {
+            setNameError('Имя должно содержать не менее 2 букв');
+        } else {
+            setNameError('');
+        }
+    };
+
+    const messageHandler = (e) => {
+        setMessage(e.target.value)
+        if ((e.target.value.length < 10)) {
+            setMessageError('Сообщение должно содержать не менее 10 символов');
+        } else {
+            setMessageError('');
+        }
+    };
+
+    const blurHandler = (e) => {
+        switch (e.target.name) {
+            case 'name':
+                setNameDirty(true)
+                break
+            case 'email':
+                setEmailDirty(true)
+                break
+            case 'phone':
+                setPhoneDirty(true)
+                break
+            case 'message':
+                setMessageDirty(true)
+                break
+        }
+    }
 
     return (
         <>
@@ -58,50 +94,32 @@ export default function ContactPage() {
                     </div>
                 </div>
                 <div className={styles.central}>
-                    {/* <div className={styles.form}>
-                        <div className={styles.inputBox}>
-                            <div className={styles.name}>
-                                <input type="text" className={styles.form_control} required />
-                                <div className={styles.placeholder}>Your Name <span className={styles.red}>*</span></div>
-                            </div>
-                            <div className={styles.email}>
-                                <input type="email" className={styles.form_control} required />
-                                <div className={styles.placeholder}>Your Email  <span className={styles.red}>*</span></div>
-                            </div>
-                            <div className={styles.phone}>
-                                <input type="phone" className={styles.form_control} required />
-                                <div className={styles.placeholder}>Your Phone  <span className={styles.red}>*</span></div>
-                            </div>
-                        </div>
-                        <div className={styles.messageBox}>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                        </div>
-                        <div className={styles.buttons}>
-                            <button className={styles.buttonRed}>Send Massage</button>
-                        </div>
-                    </div> */}
                     <div className={styles.form}>
                         <div className={styles.inputBox}>
                             <div className={styles.name}>
-                                <input type="text" className={styles.form_control} value={name} onChange={handleNameChange} required />
+                                <input onChange={e => nameHandler(e)} value={name} onBlur={e => blurHandler(e)} name='name' type="text" className={styles.form_control} required />
                                 <div className={styles.placeholder}>Your Name <span className={styles.red}>*</span></div>
+                                {(nameDirty && nameError) && <div className={styles.smallErr} style={{ color: 'red' }}>{nameError}</div>}
                             </div>
                             <div className={styles.email}>
-                                <input type="email" className={styles.form_control} value={email} onChange={handleEmailChange} required />
+                                <input onChange={e => emailHandler(e)} value={email} onBlur={e => blurHandler(e)} name='email' type="email" className={styles.form_control} required />
                                 <div className={styles.placeholder}>Your Email  <span className={styles.red}>*</span></div>
+                                {(emailDirty && emailError) && <div className={styles.smallErr} style={{ color: 'red' }}>{emailError}</div>}
                             </div>
                             <div className={styles.phone}>
-                                <input type="tel" className={styles.form_control} value={phone} onChange={handlePhoneChange} required />
+
+                                <input onChange={e => phoneHandler(e)} value={phone} onBlur={e => blurHandler(e)} name='phone' type="tel" className={styles.form_control} required />
                                 <div className={styles.placeholder}>Your Phone  <span className={styles.red}>*</span></div>
+                                {(phoneDirty && phoneError) && <div className={styles.smallErr} style={{ color: 'red' }}>{phoneError}</div>}
                             </div>
                         </div>
                         <div className={styles.messageBox}>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                            <textarea onChange={e => messageHandler(e)} value={message} onBlur={e => blurHandler(e)} name='message' type="tel" cols="30" rows="10" placeholder="Your Message" ></textarea>
                         </div>
+                        {(messageDirty && messageError) && <div className={styles.bigErr} style={{ color: 'red' }}>{messageError}</div>}
                         <div className={styles.buttons}>
-                            <button className={styles.buttonRed} onClick={handleSubmit}>Send Message</button>
+                            <button className={styles.buttonRed}>Send Message</button>
                         </div>
-                        {formSubmitted && <p>Thank you for your message!</p>}
                     </div>
                 </div>
             </div>

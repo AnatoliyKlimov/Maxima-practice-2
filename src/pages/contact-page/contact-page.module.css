@@ -195,3 +195,16 @@
   background: #db4444;
   cursor: pointer;
 }
+.smallErr {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.bigErr {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 12px;
+  padding-left: 30px;
+}

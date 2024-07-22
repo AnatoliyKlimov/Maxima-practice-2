@@ -1,8 +1,55 @@
-import styles from './my-account-page.module.css'
-import { NavLink } from 'react-router-dom'
-
+import styles from './my-account-page.module.css';
+import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
 
 export default function AccountPage() {
+    const [pass, setPass] = useState('');
+    const [passDirty, setPassDirty] = useState(false);
+    const [passError, setPassError] = useState([]);
+    const [previousPass, setPreviousPass] = useState('');
+    const [confirmPassError, setConfirmPassError] = useState('');
+
+    const passlHandler = (e) => {
+        setPass(e.target.value);
+
+        const errors = [];
+
+        if (e.target.value.length < 8) {
+            errors.push('Пароль должен содержать не менее 8 символов');
+        }
+
+        if (!/\d/.test(e.target.value)) {
+            errors.push('Пароль должен содержать хотя бы одну цифру');
+        }
+
+        if (!/[A-Z]/.test(e.target.value)) {
+            errors.push('Пароль должен содержать хотя бы одну заглавную букву');
+        }
+
+        if (!/[!@#$%^&*]/.test(e.target.value)) {
+            errors.push('Пароль должен содержать хотя бы один специальный символ');
+        }
+
+        setPassError(errors);
+    };
+
+    const blurHandler = (e) => {
+        switch (e.target.name) {
+            case 'pass':
+                setPassDirty(true);
+                break;
+        }
+    };
+
+    const confirmPassHandler = (e) => {
+        setPreviousPass(e.target.value);
+        if (e.target.value !== pass) {
+            setConfirmPassError('Пароли не совпадают');
+        } else {
+            setConfirmPassError('');
+        }
+    };
+
     return (
         <>
             <div className={styles.main}>
@@ -50,8 +97,26 @@ export default function AccountPage() {
                         <div className={styles.inputBoxPass}>
                             <p className={styles.paragraph}>Password Changes</p>
                             <input type="password" placeholder="Current Passwod" />
-                            <input type="password" placeholder="New Passwod" />
-                            <input type="password" placeholder="Confirm New Passwod" />
+                            <input
+                                onChange={e => passlHandler(e)}
+                                value={pass}
+                                onBlur={e => blurHandler(e)}
+                                name="pass"
+                                type="password"
+                                placeholder="New Passwod"
+                            />
+                            {passDirty &&
+                                passError.map((error, index) => (
+                                    <div key={index} className={styles.smallErr} style={{ color: 'red' }}>
+                                        {error}
+                                    </div>
+                                ))}
+                            <input
+                                type="password"
+                                placeholder="Confirm New Passwod"
+                                onChange={e => confirmPassHandler(e)}
+                            />
+                            {(previousPass && confirmPassError) && <div className={styles.smallErr} style={{ color: 'red' }}>{confirmPassError}</div>}
                         </div>
                         <div className={styles.buttons}>
                             <button className={styles.buttonWhite}>Cancel</button>

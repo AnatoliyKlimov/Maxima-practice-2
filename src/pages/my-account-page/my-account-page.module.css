@@ -13,7 +13,7 @@
 }
 .main a {
   color: black;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -30,7 +30,7 @@
 .span {
   color: black;
   white-space: nowrap;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   width: 62px;
   font-size: 14px;
   font-weight: 400;
@@ -39,7 +39,7 @@
 }
 .paragraph {
   color: black;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   width: 166px;
   height: 21px;
   font-size: 16px;
@@ -77,13 +77,13 @@
   width: 139px;
 }
 .welcome .paragraph {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
 }
 .mr_ms {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -101,7 +101,7 @@
   box-shadow: 0px 1px 13px 0px #0000000d;
 }
 .editProfile {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   width: 155px;
   height: 28px;
   font-size: 20px;
@@ -125,7 +125,7 @@
   padding-top: 16px;
 }
 .inputBox input {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -141,10 +141,10 @@
   flex-wrap: wrap;
   flex: 710px;
   padding: 0 80px;
-  gap: 16px 0;
+  gap: 12px 0;
 }
 .inputBoxPass input {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -158,6 +158,13 @@
 .inputBoxPass .paragraph {
   padding-top: 16px;
 }
+.smallErr {
+  width: 700px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+} 
 .buttons {
   display: flex;
   justify-content: flex-end;
@@ -167,18 +174,19 @@
   padding: 0 80px;
 }
 .buttonWhite {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   border: none;
   background: #ffffff;
   padding: 16px 32px;
+  cursor: pointer;
 }
 .buttonRed {
   width: 214px;
   height: 56px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -186,4 +194,5 @@
   border: none;
   color: white;
   background: #db4444;
+  cursor: pointer;
 }
