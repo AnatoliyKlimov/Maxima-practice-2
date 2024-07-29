@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.dashboard
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+    height: 2490px;
+    background: rgba(250, 250, 250, 1);
+
+    display: flex;
+    flex-direction: row;
+}
+.dashboard_left
+{background: rgba(255, 255, 255, 1);
+
+    width:260px;
+height:2490px;
+
+
+}
+.dashboard_right
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 26px;padding-right: 26px;
+}
+.dashboard_right_top
+{
+    width: 1,126px;
+height: 62px;
+margin-top: 8px;
+
+
+
+}
+.block1
+{
+    width: 646px;
+height: 199px;
+display: flex;
+flex-direction: row;
+gap: 52px;
+
+}
+.block2
+
+{
+    width: 454px;
+height: 199px;
+display: flex;
+flex-direction: row;
+gap: 45px;
+
+}
+.dashboard_block
+{
+    background: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    padding: 24px 32px 24px 24px;
+}
+.dashboard_main
+{
+    display: flex;
+    flex-direction: column;
+}
+.div_block1
+
+{
+    display: flex;
+    flex-direction:row;
+    gap: 26px;
+    margin-top: 24px;
+}
+
+.block3
+{
+    width: 358px;
+height: 199px;
+display: flex;
+flex-direction: row;
+gap: 21px;
+}
+.block4
+{
+    width: 646px;
+height: 476px;
+
+
+}
+.block5
+{
+    width: 454px;
+    height: 476px;
+  
+    
+
+}
+
+.block6
+{
+    width: 358px;
+    height:484px;
+
+    
+  
+}
+.block7
+{
+    width: 742px;
+height: 484px;
+
+
+}
+.block8
+{
+    width: 742px;
+height:466px;
+
+}
+.block9
+{
+    width: 358px;
+height: 466px;
+
+}
+.block10
+{
+    width:358px;
+    height: 420px;
+   
+    
+}
+.block11
+{
+    width: 742px;
+height: 420px;
+
+
+}
+.block_left_inner p
+{
+    font-family: Public Sans;
+font-size: 18px;
+font-weight: 600;
+line-height: 26px;
+letter-spacing: -0.02em;
+
+}
+.days
+{
+    font-family: Public Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-align: left;
+   color: rgba(139, 144, 154, 1);
+}
+.dashboard_left
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 14px 0px 14px;
+}
+.dashboard_left p
+{
+font-family: Inter;
+font-size: 24px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0.03em;
+text-align: left;
+margin-left: 4px;
+}
+.dashboard_left h3
+{
+
+    font-family: Public Sans;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: rgba(139, 144, 154, 1);
+margin-top: 35px;
+margin-left: 16px;
+}
+.dashboard_menu
+{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+.dashboard_menu span
+{
+ 
+font-family: Public Sans;
+font-size: 15px;
+font-weight: 400;
+line-height: 22px;
+text-align: left;
+color: rgba(139, 144, 154, 1);
+
+}
+.menu_select
+{
+    width: 232px;
+height: 40px;
+padding: 9px 16px 9px 16px;
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: start;
+gap: 8px;
+}
+.grey
+{
+    background: rgba(243, 244, 248, 1);
+
+}
+.block_left_inner_bottom
+{
+    margin-top: 30px;
+    display: flex;
+
+}
+.big_black
+{
+font-family: Public Sans;
+font-size: 32px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: -0.02em;
+text-align: left;
+color: rgba(35, 39, 46, 1);
+
+}
+.low_blue
+{
+    font-family: Public Sans;
+font-size: 18px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: -0.02em;
+text-align: left;
+color: rgba(15, 183, 255, 1);
+margin-left: 12px;
+}
+.block_left_inner_bottom_bottom
+
+{
+    gap: 8px;
+    margin-top: 16.5px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.low_green
+{
+    font-family: Public Sans;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: -0.02em;
+text-align: left;
+color: rgba(30, 181, 100, 1);
+
+}
+.block_right_inner
+{
+    display: flex;
+    flex-direction: column;
+}
+.graph1
+{
+    width: 360px;
+height: 114px;
+
+}
+.salescost span
+{
+    font-family: Public Sans;
+font-size: 12px;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: -0.02em;
+text-align: left;
+
+}
+.salescost
+{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.week
+{
+    padding-right: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Public Sans;
+font-size: 12px;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: -0.02em;
+text-align: left;
+color: rgba(35, 39, 46, 1);
+
+}
+
+.graph2
+{
+    width: 221px;
+    height: 105.5px;
+ 
+    
+
+}
+.graph3
+{
+    width: 155px;
+height: 75.95px;
+
+    
+
+}
+.block3 {
+    gap: 3px;
+}
+
+.DA{
+    width: 161px;
+    height: 26px;
+   
+}
+.low_red
+{
+    font-family: Public Sans;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: -0.02em;
+text-align: left;
+
+color: rgba(208, 38, 38, 1);
+
+}

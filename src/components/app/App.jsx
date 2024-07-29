@@ -1,5 +1,6 @@
 import Header from '../header/header';
 import Footer from '../footer/footer';
+import Dashboard from '../../pages/dashboard/dashboard';
 import Login from '../login/login';
 import Checkout from '../checkout/checkout';
 import Cart from '../cart/cart';
@@ -10,7 +11,7 @@ function App() {
   return (
     <>
       <Header />
-  { <Cart />}
+  { <Dashboard />}
      {/* <Login /> */}
       <Footer />
 {/* <MainPage/> */}
