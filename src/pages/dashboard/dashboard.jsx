@@ -4,6 +4,11 @@ import smart from '../dashboard/img/smart-home.png';
 import user from '../dashboard/img/users.png';
 import graph1 from '../dashboard/img/Group 1.svg';
 import graph2 from '../dashboard/img/Vector 2.svg';
+import dots from '../dashboard/img//dots-vertical.png';
+import graph4 from '../dashboard/img/graph4.png';
+import bargraph from '../dashboard/img/bargraph.png';
+import country from '../dashboard/img/us 1.png';
+import line from '../dashboard/img/line.png';
 function Dashboard() {
 
     return (
@@ -133,18 +138,158 @@ function Dashboard() {
                         </div>
 
                         <div className='div_block1'>
-                        <div className='dashboard_block block4'></div>
-                        <div className='dashboard_block block5'></div>
+                        <div className='dashboard_block block4'>
+                            <div className='block4_top'><div><span>Report</span><p>Last 7 Days</p></div> <img src={dots} alt="dots" /></div>
+                            <div className='block4_bottom'>
+                                <div className='block4_bottom_menu'>
+                                    <div className='info1 info1_border'><span className='numberinfo'>24k</span><p className='nameinfo'>Customer</p></div>
+                                    <div className='info1'><span className='numberinfo'>3.5k</span><p className='nameinfo'>Total Products</p></div>
+                                    <div className='info1'><span className='numberinfo'>2.5k</span><p className='nameinfo'>Stock Products</p></div>
+                                    <div className='info1'><span className='numberinfo'>0.5</span><p className='nameinfo'>Out of Stock</p></div>
+                                    <div className='info1'><span className='numberinfo'>250k</span><p className='nameinfo'>Reveneu</p></div>
+                                </div>
+                                <img src={graph4} alt="" />
+                            </div>
+                        </div>
+                        <div className='dashboard_block block5'>
+                            <div className='block5_top'><p>Users in last 30 minutes</p><span className='cost'>16.5K</span><span className='user_per'>User per minute</span> <img src={bargraph} alt="bar" /></div>
+                            <div className='block5_bottom'>
+                                <div className='block5_bottom_top'><span>Sales by Country</span><span>Sales</span></div>
+                                <div className='block5_bottom_bottom'>
+                                    <div className='country'><img className='spherecountry' src={country} alt="USA" />
+                                    <div><span className='minicost'>30k</span><p className='country_name'>United States</p></div>
+                                    <img src={line} alt="line" />
+                                    <span className='procent'>&uarr;25.8%</span></div>
+                                    <div className='country'><img className='spherecountry' src={country} alt="USA" />
+                                    <div><span className='minicost'>30k</span><p className='country_name'>United States</p></div>
+                                    <img src={line} alt="line" />
+                                    <span className='procent'>&uarr;25.8%</span></div>
+                                    <div className='country'><img className='spherecountry' src={country} alt="USA" />
+                                    <div><span className='minicost'>30k</span><p className='country_name'>United States</p></div>
+                                    <img src={line} alt="line" />
+                                    <span className='procent'>&uarr;25.8%</span></div>
+                                    <div className='country'><img className='spherecountry' src={country} alt="USA" />
+                                    <div><span className='minicost'>30k</span><p className='country_name'>United States</p></div>
+                                    <img src={line} alt="line" />
+                                    <span className='procent'>&uarr;25.8%</span></div>
+                                </div>
+                            </div>
+                        </div>
                
                         </div>
 
                         <div className='div_block1'>
-                        <div className='dashboard_block block6'></div>
-                        <div className='dashboard_block block7'></div>
-               
+                        <div className='dashboard_block block6'>
+                        <div className='block6_top'><div><span>Top Selling Category</span><p>Total 10.4k Visitors</p></div> <img src={dots} alt="dots" /></div>
+                        <div className='block6_bottom'>
+                            <div className='sphere sphere_big'><span>Fashion</span><p>4.567</p><span>Per Day</span></div>
+                        <div className='sphere sphere_middle'><span>Fashion</span><p>3.167</p><span>Per Day</span></div>
+                        <div className='sphere sphere_low'><span>Fashion</span><p>1.845</p><span>Per Day</span></div></div>
+                        </div>
+                        <div className='dashboard_block block7'>
+                        <div className='block7_top'><div><span>Top Selling Category</span></div> <p>View All</p></div>
+                        <div className='block7_bottom'>
+                        <table>
+
+  <thead>
+    <tr>
+      <th className='menu_tabl first1'>ID</th>
+      <th className='menu_tabl'>ISSUED DATE</th>
+      <th className='menu_tabl'>TOTAL</th>
+      <th className='menu_tabl'>ACTIONS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th className='first_table'>#5089</th>
+      <td>31 March 2023</td>
+      <td>1200$</td>
+      <td className='last_table'>View Detail</td>
+    </tr>
+    <tr>
+    <th className='first_table'>#5089</th>
+      <td>31 March 2023</td>
+      <td>1200$</td>
+      <td className='last_table'>View Detail</td>
+    </tr>
+    <tr>
+    <th className='first_table'>#5089</th>
+      <td>31 March 2023</td>
+      <td>1200$</td>
+      <td className='last_table'>View Detail</td>
+    </tr>
+    <tr>
+    <th className='first_table'>#5089</th>
+      <td>31 March 2023</td>
+      <td>1200$</td>
+      <td className='last_table'>View Detail</td>
+    </tr>
+    <tr>
+    <th className='first_table'>#5089</th>
+      <td>31 March 2023</td>
+      <td>1200$</td>
+      <td className='last_table'>View Detail</td>
+    </tr>
+    <tr>
+    <th className='first_table'>#5089</th>
+      <td>31 March 2023</td>
+      <td>1200$</td>
+      <td className='last_table'>View Detail</td>
+    </tr>
+  </tbody>
+</table>
+                        </div>
+                        </div>
                         </div>
                         <div className='div_block1'>
-                        <div className='dashboard_block block8'></div>
+                        <div className='dashboard_block block7'>
+                        <div className='block7_top'><div><span>Best Selling Products</span></div> <img src={dots} alt="dots" /></div>
+                        <div className='block7_bottom'>
+                        <table className='table2'>
+
+  <thead>
+    <tr>
+      <th className='menu_tabl first1'>PRODUCT</th>
+      <th className='menu_tabl'>TOTAL ORDER</th>
+      <th className='menu_tabl'>STATUS</th>
+      <th className='menu_tabl'>PRICE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th className='first_table_black'>#5089</th>
+      <td>506</td>
+      <td>1200$</td>
+      <td className='last_table_black'>$999.29</td>
+    </tr>
+    <tr>
+    <th className='first_table_black'>#5089</th>
+    <td>506</td>
+      <td>1200$</td>
+      <td className='last_table_black'>$999.29</td>
+    </tr>
+    <tr>
+    <th className='first_table_black'>#5089</th>
+    <td>506</td>
+      <td>1200$</td>
+      <td className='last_table_black'>$999.29</td>
+    </tr>
+    <tr>
+    <th className='first_table_black'>#5089</th>
+    <td>506</td>
+      <td>1200$</td>
+      <td className='last_table_black'>$999.29</td>
+    </tr>
+    <tr>
+    <th className='first_table_black'>#5089</th>
+    <td>506</td>
+      <td>1200$</td>
+      <td className='last_table_black'>$999.29</td>
+    </tr>
+  </tbody>
+</table>
+                        </div>
+                        </div>
                         <div className='dashboard_block block9'></div>
                
                         </div>
